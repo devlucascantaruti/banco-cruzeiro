@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6DA4FE"
+    tools:context=".MainActivity2">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="374dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="52dp"
+            android:text="Bem-vindo ao Banco Cruzeiro"
+            android:textColor="#002A84"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSaldo"
+            android:layout_width="198dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="Saldo Disponível"
+            android:textColor="#002A84"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewValorSaldo"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewValorSaldo"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="12dp"
+            android:text="R$ 10.000,00"
+            android:textColor="#FE9D01"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonTransacao"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="108dp"
+            android:background="@drawable/btn_amarelo"
+            android:text="Realizar Transação"
+            android:textColor="#002A84"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonHistorico"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_amarelo"
+            android:text="Ver Histórico"
+            android:textColor="#002A84"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonTransacao" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="378dp"
+            android:layout_height="383dp"
+            android:layout_marginTop="148dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.657"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/estrela" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
